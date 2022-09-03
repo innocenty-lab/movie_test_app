@@ -1,16 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:movie_test_app/screens/favorite_movie.dart';
 import 'package:movie_test_app/screens/popular_movie.dart';
-import 'package:movie_test_app/service/api_service.dart';
-
-const String SETTINGS_BOX = "settings";
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Hive.initFlutter();
-  await Hive.openBox(SETTINGS_BOX);
-  await Hive.openBox(API_BOX);
   runApp(const MyApp());
 }
 

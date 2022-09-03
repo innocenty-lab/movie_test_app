@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:movie_test_app/screens/movie_detail.dart';
-import 'package:movie_test_app/toast.dart';
+import 'package:movie_test_app/components/toast.dart';
 import '../model/popular_movies_model.dart';
 import '../service/api_service.dart';
 
