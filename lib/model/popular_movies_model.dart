@@ -1,11 +1,3 @@
-// import 'dart:convert';
-
-// PopularMovies popularMoviesFromJson(String str) => PopularMovies.fromJson(json.decode(str));
-
-// String popularMoviesToJson(PopularMovies data) => json.encode(data.toJson());
-
-import 'package:intl/intl.dart';
-
 class PopularMovies {
     PopularMovies({
         required this.page,
