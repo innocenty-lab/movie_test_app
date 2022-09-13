@@ -11,7 +11,7 @@ class ApiService {
     final response = await http.get(Uri.parse(_baseUrl+_apiKey));
     // print(response.body);
     if (response.statusCode == 200) {
-      return PopularMovies.fromJson(json.decode(response.body)).results.toList();
+      return PopularMovies.fromJson(json: json.decode(response.body)).results.toList();
     } else {
       throw Exception("Failed to get popular movie");
     }

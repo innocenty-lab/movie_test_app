@@ -5,15 +5,9 @@ import 'package:intl/intl.dart';
 import 'package:movie_test_app/model/popular_movies_model.dart';
 import 'package:themed/themed.dart';
 
-
-class MovieDetailPage extends StatefulWidget {
+class MovieDetailPage extends StatelessWidget {
   MovieDetailPage({Key? key}) : super(key: key);
 
-  @override
-  State<MovieDetailPage> createState() => _MovieDetailPageState();
-}
-
-class _MovieDetailPageState extends State<MovieDetailPage> {
   String imageBaseUrl = 'https://image.tmdb.org/t/p/w500';
 
   @override
