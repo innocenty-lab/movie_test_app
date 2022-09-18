@@ -12,7 +12,7 @@ class MovieDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final movieDetails = ModalRoute.of(context)!.settings.arguments as Result;
+    final movieDetails = ModalRoute.of(context)!.settings.arguments as Results;
 
     return SafeArea(
       child: Scaffold(

@@ -7,20 +7,20 @@ class PopularMovies {
     });
 
     int page;
-    List<Result> results;
+    List<Results> results;
     int totalPages;
     int totalResults;
 
     factory PopularMovies.fromJson({required Map<String, dynamic> json}) => PopularMovies(
         page: json["page"],
-        results: List<Result>.from(json["results"].map((x) => Result.fromJson(x))),
+        results: List<Results>.from(json["results"].map((x) => Results.fromJson(x))),
         totalPages: json["total_pages"],
         totalResults: json["total_results"],
     );
 }
 
-class Result {
-    Result({
+class Results {
+    Results({
         required this.adult,
         required this.backdropPath,
         required this.genreIds,
@@ -53,7 +53,7 @@ class Result {
     double voteAverage;
     int voteCount;
 
-    factory Result.fromJson(Map<String, dynamic> json) => Result(
+    factory Results.fromJson(Map<String, dynamic> json) => Results(
         adult: json["adult"],
         backdropPath: json["backdrop_path"],
         genreIds: json["genre_ids"].toString(),
